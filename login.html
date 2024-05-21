@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header"> 
+        <a href="#" class ="logo">BarkPark        </a>
+
+        <nav class="navbar">
+            <a href="home.html" class ="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="login.html">Log In</a>
+            <a href="register.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class = "container">
+        <div class = "box form-box">
+            <header>Welcome to BarkPark!</header>
+            <form action = "" method="post">
+                <div class = "field input">
+                    <label for = "username">Username</label>
+                    <input type = "text" id = "password" name = "password" autocomplete="off" required>
+                </div>
+
+                <div class = "field input">
+                    <label for = "password]">Password</label>
+                    <input type = "password" id = "username" name = "username" autocomplete="off" required>
+                </div>
+
+                <div class = "field">
+                    <input type = "submit" class = "btn" value = "Login" name = "submit" required>
+                </div>
+
+                <div class = "links">
+                    Dont have an account? <a href = "register.html">Sign up!</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
