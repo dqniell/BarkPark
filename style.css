@@ -239,7 +239,7 @@ main{
 }
 
 .hero-content {
-    background: rgba(147, 125, 155, 0.5); 
+    background: rgba(147, 125, 155, 0.5); /*change color*/
     padding: 20px;
     border-radius: 10px;
 }
