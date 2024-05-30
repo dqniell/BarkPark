@@ -92,7 +92,6 @@ body{
 .form-box{
     width: 450px;
     margin: 0
-    px 10px;
 }
 .form-box header{
     font-size: 25px;
@@ -205,26 +204,8 @@ main{
     display: flex;
 }
 
-.password-section{
-    display: flex;
-}
-
-#last-name{
-    margin-left: 7.5%;
-}
-
-#confirm-password{
-    margin-left: 7.5%;
-}
-
-.password-section {
-    position: relative;
-}
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 35px;
-    cursor: pointer;
+#first-name{
+    margin-right: 7.5%;
 }
 
 .hero {
