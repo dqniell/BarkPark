@@ -10,19 +10,17 @@ body{
 }
 
 .header { 
-    background-color: #007BFF; 
+    background-color: #e4e9f7; 
     position: fixed;
     top: 0; 
     left: 0;
     width: 100%;
-    padding: 30px 8%;
-    background: transparent;
+    padding: 1.1% 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-
 
 .logo { 
     font-size: 25px;
@@ -44,13 +42,22 @@ body{
     color: blue
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    /* padding: 100px 0; */
+    flex-direction: column;
+}
 
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    flex-direction: column;
+    gap: 20px; 
+    
 }
 
 .box{
@@ -59,8 +66,9 @@ body{
     flex-direction: column;
     padding: 25px 25px;
     border-radius: 20px;
-    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
-                0 32px 64px -48px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+    z-index: 101; /* Add this line */
+    position: relative; /* Add this line */
 }
 
 .about-box{ 
@@ -90,8 +98,11 @@ body{
 }
 
 .form-box{
+    margin-top: 6%;
     width: 450px;
-    margin: 0
+    z-index: 101; /* Highlighted */
+    position: relative; /* Highlighted */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
 }
 .form-box header{
     font-size: 25px;
@@ -209,7 +220,6 @@ main{
 }
 
 .hero {
-    background: url('dog-park.jpg') no-repeat center center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -219,28 +229,23 @@ main{
     color: black;
 }
 
-.hero-content {
-    background: rgba(147, 125, 155, 0.5); /*change color*/
-    padding: 20px;
-    border-radius: 10px;
+.left-col{
+    margin: 5%;
 }
 
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+.slogan{
+    font-size: 60px;
+    font-weight: bolder;
 }
 
-.hero p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+.statements{
+    margin-top: 2%;
+    font-size: 30px;
+    text-align: left;
 }
 
-.hero .cta {
-    padding: 10px 20px;
-    background-color: #9566ad;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
+.right-col{
+    margin: 10%;
 }
 
 .services, .testimonials {
@@ -265,4 +270,88 @@ footer {
 
 footer .contact-info p {
     margin: 5px 0;
+}
+
+
+
+#map {
+    width: auto;
+    height: auto; 
+    max-width: auto;
+    max-height: auto;
+}
+
+#map {
+    height: 600px;
+}
+
+a:link, a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+.landmark {
+    width: 250px;
+    padding: 7px 0 0 0;
+    background: rgba(247, 247, 247, 0.75);
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.29);
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transform-origin: 0 10px;
+    transform-origin: 0 10px;
+}
+
+.landmark h1 {
+    margin-top: 0;
+    padding: 5px 15px;
+    background: #2aaef5;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.landmark section {
+    padding: 0 15px 5px;
+    font-size: 14px;
+}
+
+.landmark section p {
+    margin: 5px 0;
+}
+
+.landmark:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -13px;
+    width: 0;
+    height: 0;
+    margin-bottom: -13px;
+    border-right: 13px solid #2aaef5;
+    border-top: 13px solid rgba(0, 0, 0, 0);
+    border-bottom: 13px solid rgba(0, 0, 0, 0);
+}
+
+@-webkit-keyframes scale-and-fadein {
+    0% {
+        -webkit-transform: scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-and-fadein {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
